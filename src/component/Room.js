@@ -29,6 +29,7 @@ const Room = () => {
       return response;
     }
     catch (exception) {
+      
       // notificationHandler(`Failed to get the "${hostelObject.description}" room info`, 'error')
     }
   }
