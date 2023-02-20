@@ -25,11 +25,12 @@ const Room = () => {
   const [rooms, setRooms] = useState([])
   const getR = async () => {
     try {
+      
       const response = await HostelService.getR()
       return response;
     }
     catch (exception) {
-      
+
       // notificationHandler(`Failed to get the "${hostelObject.description}" room info`, 'error')
     }
   }
